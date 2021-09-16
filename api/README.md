@@ -1,7 +1,8 @@
 # Annoucements  API
 ## How to install
 1. You are going to need Python 3.x with Flask module installed.
-2. Run main.py
+2. Make a new folder named files
+3. Run main.py
 
 ## How to use
 We have the following routes:

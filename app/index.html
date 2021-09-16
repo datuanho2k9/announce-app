@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Hello world...</p>
+    <script src="scripts/notif.js"></script>
+    <form target="_blank" action="http://127.0.0.1:5000/announce" method="POST" enctype="multipart/form-data">
+        <input type="text" name="note" placeholder="Note" />
+        <input type="file" name="files" multiple />
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

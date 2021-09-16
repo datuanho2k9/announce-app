@@ -1,0 +1,15 @@
+{
+  "name": "a13-notifs-app",
+  "version": "1.0.0",
+  "description": "Give you notifications about a13-class",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "datuanho2k9",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^14.0.1"
+  }
+}

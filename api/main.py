@@ -76,7 +76,7 @@ def getPost(no):
 
     with open("./database/posts.json", "r") as posts:
         try:
-            requested = json.load(posts)[no]
+            requested = json.dumps(json.load(posts))
         except IndexError:
             # Sometimes it should be out of range error.( most of the time)
             requested = ["IndexError"]

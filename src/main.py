@@ -68,7 +68,7 @@ def download():
         filename = request.args["filename"]
         return send_file(f"./files/{announcementId}/{filename}")
     except Exception as e:
-        return e
+        return str(e)
         # Sometime there is unknown file error, so we return it here
 
 
@@ -98,7 +98,7 @@ def getPost(no):
             data = json.load(posts)[no]
             requested = json.dumps(data)
         except IndexError:
-            # Sometimes it should be out of range error.( most of the time)
+            # Sometimes it should be out of range error.(most of the time)
             requested = ["IndexError"]
         except Exception as e:
             requested = [e]
